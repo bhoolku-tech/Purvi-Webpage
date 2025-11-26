@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelvic Floor Physical Therapy | Personalized Wellness Care</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Tailwind Configuration for Soft Colors and Font */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-calm': '#74B7A0', /* Soft Teal/Green */
+                        'secondary-accent': '#FFDDC1', /* Soft Peach/Coral - New accent color */
+                        'background-light': '#F9FAF8', /* Off-white / Soft Beige */
+                        'text-dark': '#3F4448', /* Soft Charcoal */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+        
+        /* === BACKGROUND HUE WITH SCROLL EFFECT (NEW) === */
+        body {
+            /* Fallback color */
+            background-color: #F9FAF8; 
+            /* Subtle fixed gradient that creates the 'moving hue' effect */
+            background-image: linear-gradient(135deg, #F9FAF8 0%, #EFF4F2 50%, #F9FAF8 100%);
+            background-size: 150% 150%; /* Larger than viewport */
+            background-attachment: fixed; /* Key: keeps the background fixed during scroll */
+            
+            /* Typography reset for custom styling */
+            color: #3F4448;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* ============================================== */
+
+        /* Custom styles for accessibility and visual appeal */
+        .cta-button {
+            background-color: #74B7A0; 
+            color: white; 
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(116, 183, 160, 0.3), 0 4px 6px -4px rgba(116, 183, 160, 0.3);
+            background-color: #68A590; /* Slightly darker hover */
+        }
+        /* Service card hover effect */
+        .service-card {
+            transition: all 0.3s ease;
+            border-color: #e5e7eb; /* Default light border */
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+            border-color: #74B7A0; /* Highlight border on hover */
+        }
+    </style>
+</head>
+<body class="font-sans text-text-dark"> <!-- Removed background classes here, handled by CSS -->
+
+    <!-- Hero Section --><section id="hero" class="pt-24 pb-24 px-4 md:px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+            <!-- Text Content --><div class="lg:w-1/2 text-center lg:text-left">
+                <p class="text-2xl font-bold text-primary-calm tracking-wide mb-4">P.T. Wellness</p>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-text-dark mb-6">
+                    Licensed Physical Therapist Specializing in <span class="text-primary-calm">Pelvic Floor Therapy</span>
+                </h2>
+                <p class="text-xl text-gray-600 mb-8 max-w-lg lg:max-w-none mx-auto lg:mx-0">
+                    Offering personalized, evidence-based care and dedicated guidance. Let's discuss your health journey.
+                </p>
+                <!-- REACH OUT BUTTON REMOVED -->
+            </div>
+
+            <!-- Image (Using uploaded file) --><div class="lg:w-1/2 flex justify-center lg:justify-end">
+                <div class="relative w-full max-w-md h-96 sm:h-[400px] bg-primary-calm/10 rounded-3xl overflow-hidden shadow-2xl">
+                    <img 
+                        src="Gemini_Generated_Image_hcm1llhcm1llhcm1.jpg" 
+                        alt="Professional Portrait of a Physical Therapist" 
+                        class="w-full h-full object-cover rounded-3xl opacity-90"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x600/D1E7DD/0F5132?text=PT+Specialist+Image'; this.classList.add('p-8');"
+                    >
+                    <div class="absolute inset-0 bg-primary-calm/10 mix-blend-multiply rounded-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section --><section id="about" class="py-20 px-4 md:px-8 bg-white border-t border-b border-gray-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-bold text-text-dark mb-4">About the Practice</h3>
+            <div class="h-1 w-20 bg-primary-calm mx-auto mb-10 rounded-full"></div>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                I am a Licensed Physical Therapist with **4+ years of clinical experience** dedicated to specialized care. 
+                Holding a specialized certification in pelvic floor rehabilitation, my focus is on providing holistic, patient-centered recovery. 
+                I currently practice at Motion Sports Physical Therapy in Suffern, NY, where I combine advanced, evidence-based techniques with a comfort-first approach to help patients achieve long-term wellness and confidence.
+            </p>
+            <div class="mt-8">
+                <span class="inline-block bg-primary-calm text-white text-sm font-semibold py-1 px-4 rounded-full">
+                    Suffern, NY
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section --><section id="services" class="py-20 px-4 md:px-8 bg-primary-calm/5"> <!-- Softer background --><div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl font-bold text-center text-text-dark mb-4">Core Services</h3>
+            <div class="h-1 w-20 bg-primary-calm mx-auto mb-12 rounded-full"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+                <!-- Service Card 1: Pelvic Pain Management --><div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:border-primary-calm">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://via.placeholder.com/80x80/74B7A0/FFFFFF?text=Pain" alt="Pelvic Pain Icon" class="w-20 h-20 object-contain">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-text-dark text-center">Pelvic Pain Management</h4>
+                    <p class="text-gray-600 text-center">Addressing chronic pelvic pain, endometriosis-related discomfort, and pain with intimacy through manual therapy and therapeutic exercise.</p>
+                </div>
+
+                <!-- Service Card 2: Pre- & Post-Partum Therapy --><div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:border-primary-calm">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://via.placeholder.com/80x80/FFDDC1/3F4448?text=Maternity" alt="Maternity Icon" class="w-20 h-20 object-contain">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-text-dark text-center">Pre- & Post-Partum Therapy</h4>
+                    <p class="text-gray-600 text-center">Support for pregnancy-related pain, diastasis recti (abdominal separation), and tailored recovery plans after birth.</p>
+                </div>
+
+                <!-- Service Card 3: Urinary Incontinence Treatment --><div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:border-primary-calm">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://via.placeholder.com/80x80/74B7A0/FFFFFF?text=Urinary" alt="Urinary Incontinence Icon" class="w-20 h-20 object-contain">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-text-dark text-center">Urinary Incontinence Treatment</h4>
+                    <p class="text-gray-600 text-center">Effective, non-surgical solutions for stress incontinence, urge incontinence, and frequency issues through bladder retraining and muscle strengthening.</p>
+                </div>
+                
+                <!-- Service Card 4: Pelvic Muscle Re-education --><div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:border-primary-calm">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://via.placeholder.com/80x80/FFDDC1/3F4448?text=Muscles" alt="Pelvic Muscles Icon" class="w-20 h-20 object-contain">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-text-dark text-center">Pelvic Muscle Re-education</h4>
+                    <p class="text-gray-600 text-center">Using biofeedback and targeted exercises to help patients gain awareness and control over the pelvic floor musculature for optimal function.</p>
+                </div>
+
+                <!-- Service Card 5: Core/Posture Rehabilitation --><div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:border-primary-calm">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://via.placeholder.com/80x80/74B7A0/FFFFFF?text=Posture" alt="Posture Icon" class="w-20 h-20 object-contain">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-text-dark text-center">Core/Posture Rehabilitation</h4>
+                    <p class="text-gray-600 text-center">Integrating pelvic health with the entire kinetic chain to improve posture, resolve lower back pain, and enhance overall core stability.</p>
+                </div>
+
+                <!-- Service Card 6: Pelvic Organ Prolapse Management --><div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:border-primary-calm">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://via.placeholder.com/80x80/FFDDC1/3F4448?text=Prolapse" alt="Prolapse Icon" class="w-20 h-20 object-contain">
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3 text-text-dark text-center">Pelvic Organ Prolapse Management</h4>
+                    <p class="text-gray-600 text-center">Conservative care options, including strengthening, breathing techniques, and guidance on pessary use, to manage symptoms of POP.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section --><section id="approach" class="py-20 px-4 md:px-8 bg-secondary-accent/20"> <!-- Softer background with accent color --><div class="max-w-5xl mx-auto">
+            <h3 class="text-3xl font-bold text-center text-text-dark mb-4">Our Core Approach</h3>
+            <div class="h-1 w-20 bg-primary-calm mx-auto mb-12 rounded-full"></div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <!-- Approach 1 --><div>
+                    <span class="text-5xl text-primary-calm mb-3 inline-block">🔬</span>
+                    <h4 class="text-lg font-semibold mb-2 text-text-dark">Evidence-Based Care</h4>
+                    <p class="text-sm text-gray-700">All treatment plans are rooted in the latest scientific research and clinical guidelines.</p>
+                </div>
+                <!-- Approach 2 --><div>
+                    <span class="text-5xl text-primary-calm mb-3 inline-block">🤫</span>
+                    <h4 class="text-lg font-semibold mb-2 text-text-dark">Comfort-First & Discreet</h4>
+                    <p class="text-sm text-gray-700">We prioritize your comfort and privacy in a professional, supportive, and confidential environment.</p>
+                </div>
+                <!-- Approach 3 --><div>
+                    <span class="text-5xl text-primary-calm mb-3 inline-block">📝</span>
+                    <h4 class="text-lg font-semibold mb-2 text-text-dark">Personalized Plans</h4>
+                    <p class="text-sm text-gray-700">Your health journey is unique, and so is your treatment plan, tailored specifically to your goals.</p>
+                </div>
+                 <!-- Approach 4 --><div>
+                    <span class="text-5xl text-primary-calm mb-3 inline-block">🔑</span>
+                    <h4 class="text-lg font-semibold mb-2 text-text-dark">Empowering Long-Term Strategies</h4>
+                    <p class="text-sm text-gray-700">We equip you with the knowledge and tools for sustainable health and independence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA (Bold Bottom) --><section class="py-20 px-4 md:px-8 bg-primary-calm">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-bold text-white mb-6">Have Questions or Need Personalized Guidance?</h3>
+            <!-- CTA BUTTON REMOVED --></div>
+    </section>
+
+    <!-- Footer --><footer class="py-12 px-4 md:px-8 bg-text-dark text-gray-300">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-center sm:text-left space-y-4 sm:space-y-0">
+            <div class="text-sm">
+                &copy; 2024 P.T. Wellness. All rights reserved.
+            </div>
+            <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-sm">
+                <span>Location: Suffern, NY</span>
+                <span>Email: <a href="mailto:patelpurvi119@gmail.com" class="hover:text-primary-calm">patelpurvi119@gmail.com</a></span>
+                <span>Phone: <a href="tel:6149670000" class="hover:text-primary-calm">614-967-0000</a></span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
